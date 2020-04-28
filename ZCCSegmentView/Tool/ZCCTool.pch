@@ -1,0 +1,23 @@
+//
+//  ZCCTool.pch
+//  ZCCSegmentView
+//
+//  Created by Laibu tech_2 on 2020/4/28.
+//  Copyright © 2020 Laibu tech_2. All rights reserved.
+//
+
+#ifndef ZCCTool_pch
+#define ZCCTool_pch
+
+#ifdef __OBJC__
+
+#import "ZCCCommonTool.h"
+#import "NSString+Extension.h"
+#import "UIView+Extension.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#endif /* ZCCTool_pch */

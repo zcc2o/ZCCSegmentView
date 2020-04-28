@@ -14,6 +14,10 @@
 		7C8FBDCB2457C2F5004744CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8FBDCA2457C2F5004744CD /* Assets.xcassets */; };
 		7C8FBDCE2457C2F5004744CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8FBDCC2457C2F5004744CD /* LaunchScreen.storyboard */; };
 		7C8FBDD12457C2F5004744CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDD02457C2F5004744CD /* main.m */; };
+		7C8FBDDC2457CBD8004744CD /* ZCCSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */; };
+		7C8FBDDD2457CBD8004744CD /* ZCCSegmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */; };
+		7C8FBDE6245803CD004744CD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDE5245803CD004744CD /* NSString+Extension.m */; };
+		7C8FBDE92458055E004744CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDE82458055E004744CD /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,16 @@
 		7C8FBDCD2457C2F5004744CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8FBDCF2457C2F5004744CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8FBDD02457C2F5004744CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCSegmentView.m; sourceTree = "<group>"; };
+		7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCSegmentLabel.m; sourceTree = "<group>"; };
+		7C8FBDDA2457CBD7004744CD /* ZCCSegmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentLabel.h; sourceTree = "<group>"; };
+		7C8FBDDB2457CBD8004744CD /* ZCCSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentView.h; sourceTree = "<group>"; };
+		7C8FBDE22457D12E004744CD /* ZCCCommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCCommonTool.h; sourceTree = "<group>"; };
+		7C8FBDE32457D26B004744CD /* ZCCTool.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCTool.pch; sourceTree = "<group>"; };
+		7C8FBDE4245803CD004744CD /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		7C8FBDE5245803CD004744CD /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		7C8FBDE72458055E004744CD /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7C8FBDE82458055E004744CD /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,8 @@
 		7C8FBDBD2457C2F1004744CD /* ZCCSegmentView */ = {
 			isa = PBXGroup;
 			children = (
+				7C8FBDDE2457CE21004744CD /* Tool */,
+				7C8FBDD72457CBCD004744CD /* SegmentView */,
 				7C8FBDBE2457C2F1004744CD /* AppDelegate.h */,
 				7C8FBDBF2457C2F1004744CD /* AppDelegate.m */,
 				7C8FBDC12457C2F1004744CD /* SceneDelegate.h */,
@@ -74,6 +90,30 @@
 				7C8FBDD02457C2F5004744CD /* main.m */,
 			);
 			path = ZCCSegmentView;
+			sourceTree = "<group>";
+		};
+		7C8FBDD72457CBCD004744CD /* SegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				7C8FBDDA2457CBD7004744CD /* ZCCSegmentLabel.h */,
+				7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */,
+				7C8FBDDB2457CBD8004744CD /* ZCCSegmentView.h */,
+				7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */,
+			);
+			path = SegmentView;
+			sourceTree = "<group>";
+		};
+		7C8FBDDE2457CE21004744CD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7C8FBDE22457D12E004744CD /* ZCCCommonTool.h */,
+				7C8FBDE32457D26B004744CD /* ZCCTool.pch */,
+				7C8FBDE4245803CD004744CD /* NSString+Extension.h */,
+				7C8FBDE5245803CD004744CD /* NSString+Extension.m */,
+				7C8FBDE72458055E004744CD /* UIView+Extension.h */,
+				7C8FBDE82458055E004744CD /* UIView+Extension.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C8FBDC62457C2F1004744CD /* ViewController.m in Sources */,
+				7C8FBDDD2457CBD8004744CD /* ZCCSegmentLabel.m in Sources */,
 				7C8FBDC02457C2F1004744CD /* AppDelegate.m in Sources */,
 				7C8FBDD12457C2F5004744CD /* main.m in Sources */,
 				7C8FBDC32457C2F1004744CD /* SceneDelegate.m in Sources */,
+				7C8FBDDC2457CBD8004744CD /* ZCCSegmentView.m in Sources */,
+				7C8FBDE92458055E004744CD /* UIView+Extension.m in Sources */,
+				7C8FBDE6245803CD004744CD /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +259,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/laibutech_zcc/Desktop/ZCCSegmentView/ZCCSegmentView/Tool/ZCCTool.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -271,6 +317,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/laibutech_zcc/Desktop/ZCCSegmentView/ZCCSegmentView/Tool/ZCCTool.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -297,7 +345,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcc.ZCCSegmentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcc.ZCCSegmentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
