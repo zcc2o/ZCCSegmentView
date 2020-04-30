@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 更新滚动
 /// @param offsetX 下面滚动的距离
-- (void)updateSliderBarWithScrollViewOffserX:(CGFloat)offsetX;// 更新滚动
+- (void)updateSliderBarWithScrollViewOffserX:(CGFloat)offsetX scrollViewWidth:(CGFloat)viewWidth;// 更新滚动
 
 @end
 
