@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZCCSegmentDefs.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZCCSegmentView : UIView
 @property (nonatomic, strong, readonly) NSMutableArray *labelTagsArray;
 @property (nonatomic, weak) id<ZCCSegmentViewDelegate> delegate;
-
+@property (nonatomic, assign) ZCCSegmentBottomSliderType sliderType;
 
 /// 初始化
 /// @param segmentsList 标题数组
