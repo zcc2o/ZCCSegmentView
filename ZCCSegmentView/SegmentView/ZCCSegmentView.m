@@ -41,6 +41,10 @@
         if (segmentsList.count > 0) {
             [self loadSubViewsWithArray:segmentsList];
         }
+        if (selectedIcon) {
+            _selectIcon = selectedIcon;
+            self.flowerIconView.image = selectedIcon;
+        }
     }
     return self;
 }
@@ -246,7 +250,10 @@
     
     ZCCSegmentLabel *currentLabel;
     NSInteger index = (offsetX + viewWidth / 2) / viewWidth;
-    //    NSLog(@"(index %ld = offsetx %lf + self.width / 2 %lf) / self.width %lf", index, offsetX, viewWidth / 2, viewWidth);
+    // 透明度
+    CGFloat pageOffsetX = offsetInteger % screenWidthInteger;
+    CGFloat pageOffsetValue = ABS(pageOffsetX / viewWidth);
+    CGFloat alphaValue = ABS(pageOffsetValue - 0.5) / 0.5;
     if (index >= 0 && index < self.labelTagsArray.count) {
         currentLabel = self.labelTagsArray[index];
         if (currentLabel != _currentSelectedLabel) {
@@ -254,6 +261,10 @@
             _currentSelectedLabel.isSelected = NO;
             _currentSelectedLabel = currentLabel;
         }
+    }
+    if (_selectIcon) {
+        self.flowerIconView.alpha = alphaValue;
+        self.flowerIconView.x = CGRectGetMaxX(currentLabel.frame) - kWidth(10);
     }
 }
 
@@ -270,14 +281,31 @@
             if (label == segLabel) {
                 [self.delegate segmentLabelTapedIndex:label.tag];
                 _currentSelectedLabel = segLabel;
+                break;
             }
         }
+        
+        // 如果有图标就展示
+        if (self.selectIcon) {
+            [UIView animateWithDuration:0.1 animations:^{
+                self.flowerIconView.alpha = 0;
+            } completion:^(BOOL finished) {
+                self.flowerIconView.x = CGRectGetMaxX(segLabel.frame) - kWidth(10);
+            }];
+            [UIView animateWithDuration:0.1 delay:0.1 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                self.flowerIconView.alpha = 1;
+            } completion:^(BOOL finished) {
+            }];
+        }
+        
         return;
     }
     
+/*
+     ZCCSegmentLabel *shouldSelectedLabel; // 需要选中的按钮
+     ZCCSegmentLabel *formalSelectedLabel; // 之前选中的按钮
+ */
     
-//        ZCCSegmentLabel *shouldSelectedLabel; // 需要选中的按钮
-//        ZCCSegmentLabel *formalSelectedLabel; // 之前选中的按钮
     [UIView animateWithDuration:0.1 animations:^{
         self.flowerIconView.alpha = 0;
     }];
