@@ -20,7 +20,9 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen]. bounds;
-    ViewController *vc = [[ViewController alloc] init];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    ViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"mainVC"];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];

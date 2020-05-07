@@ -176,18 +176,18 @@
         case ZCCSegmentBottomSliderFixed: {
             // 滑块长度不变
             if (currentIndex < 0) {
-                NSLog(@"currentIndex < 0。最左边 currentIndex = %ld", currentIndex);
+//                NSLog(@"currentIndex < 0。最左边 currentIndex = %ld", currentIndex);
                 currentIndex = 0;
                 label = self.labelTagsArray[currentIndex];
                 self.focusSliderBar.centerX = label.centerX + (offsetX / viewWidth) * kWidth(80);
             } else if (currentIndex >= self.labelTagsArray.count - 1) {
-                NSLog(@"currentIndex >= self.labelTagsArray.count - 1 最右边 currentIndex = %ld", currentIndex);
+//                NSLog(@"currentIndex >= self.labelTagsArray.count - 1 最右边 currentIndex = %ld", currentIndex);
                 currentIndex = self.labelTagsArray.count - 1;
                 label = self.labelTagsArray[currentIndex];
                 CGFloat pageOffsetX = offsetInteger % screenWidthInteger;
                 self.focusSliderBar.centerX = label.centerX + (pageOffsetX / viewWidth) * kWidth(80);
             } else {
-                NSLog(@"currentIndex < self.labelTagsArray.count - 1  currentIndex >=0  中间位置 currentIndex = %ld", currentIndex);
+//                NSLog(@"currentIndex < self.labelTagsArray.count - 1  currentIndex >=0  中间位置 currentIndex = %ld", currentIndex);
                 label = self.labelTagsArray[currentIndex];
                 ZCCSegmentLabel *nextLabel = self.labelTagsArray[currentIndex + 1];
                 CGFloat pageOffsetX = offsetInteger % screenWidthInteger;

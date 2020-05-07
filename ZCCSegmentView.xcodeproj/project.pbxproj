@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51BFCCD72462F80300617DCF /* ZCCFixedSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BFCCD62462F80300617DCF /* ZCCFixedSegmentVC.m */; };
+		51BFCCDA2462F81900617DCF /* ZCCUnFixedSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BFCCD92462F81900617DCF /* ZCCUnFixedSegmentVC.m */; };
 		7C8FBDC02457C2F1004744CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDBF2457C2F1004744CD /* AppDelegate.m */; };
 		7C8FBDC62457C2F1004744CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDC52457C2F1004744CD /* ViewController.m */; };
 		7C8FBDC92457C2F1004744CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8FBDC72457C2F1004744CD /* Main.storyboard */; };
@@ -21,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		51BFCCD4245F25A800617DCF /* ZCCSegmentDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentDefs.h; sourceTree = "<group>"; };
+		51BFCCD52462F80300617DCF /* ZCCFixedSegmentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCFixedSegmentVC.h; sourceTree = "<group>"; };
+		51BFCCD62462F80300617DCF /* ZCCFixedSegmentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCFixedSegmentVC.m; sourceTree = "<group>"; };
+		51BFCCD82462F81900617DCF /* ZCCUnFixedSegmentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCUnFixedSegmentVC.h; sourceTree = "<group>"; };
+		51BFCCD92462F81900617DCF /* ZCCUnFixedSegmentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCUnFixedSegmentVC.m; sourceTree = "<group>"; };
 		7C8FBDBB2457C2F1004744CD /* ZCCSegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCCSegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8FBDBE2457C2F1004744CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C8FBDBF2457C2F1004744CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +85,10 @@
 				7C8FBDBF2457C2F1004744CD /* AppDelegate.m */,
 				7C8FBDC42457C2F1004744CD /* ViewController.h */,
 				7C8FBDC52457C2F1004744CD /* ViewController.m */,
+				51BFCCD52462F80300617DCF /* ZCCFixedSegmentVC.h */,
+				51BFCCD62462F80300617DCF /* ZCCFixedSegmentVC.m */,
+				51BFCCD82462F81900617DCF /* ZCCUnFixedSegmentVC.h */,
+				51BFCCD92462F81900617DCF /* ZCCUnFixedSegmentVC.m */,
 				7C8FBDC72457C2F1004744CD /* Main.storyboard */,
 				7C8FBDCA2457C2F5004744CD /* Assets.xcassets */,
 				7C8FBDCC2457C2F5004744CD /* LaunchScreen.storyboard */,
@@ -185,6 +195,8 @@
 			files = (
 				7C8FBDC62457C2F1004744CD /* ViewController.m in Sources */,
 				7C8FBDDD2457CBD8004744CD /* ZCCSegmentLabel.m in Sources */,
+				51BFCCDA2462F81900617DCF /* ZCCUnFixedSegmentVC.m in Sources */,
+				51BFCCD72462F80300617DCF /* ZCCFixedSegmentVC.m in Sources */,
 				7C8FBDC02457C2F1004744CD /* AppDelegate.m in Sources */,
 				7C8FBDD12457C2F5004744CD /* main.m in Sources */,
 				7C8FBDDC2457CBD8004744CD /* ZCCSegmentView.m in Sources */,
