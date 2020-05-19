@@ -118,11 +118,11 @@
 		7C8FBDD72457CBCD004744CD /* SegmentView */ = {
 			isa = PBXGroup;
 			children = (
+				51BFCCD4245F25A800617DCF /* ZCCSegmentDefs.h */,
 				7C8FBDDA2457CBD7004744CD /* ZCCSegmentLabel.h */,
 				7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */,
 				7C8FBDDB2457CBD8004744CD /* ZCCSegmentView.h */,
 				7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */,
-				51BFCCD4245F25A800617DCF /* ZCCSegmentDefs.h */,
 			);
 			path = SegmentView;
 			sourceTree = "<group>";

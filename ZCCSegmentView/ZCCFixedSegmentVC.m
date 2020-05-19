@@ -27,7 +27,7 @@
 - (void)loadSubViews {
     [self.view setBackgroundColor:[UIColor whiteColor]];
     // ————————————切换栏—————————————
-    ZCCSegmentView *segmentView = [[ZCCSegmentView alloc] initWithSegmentsArray:@[@"菜单栏1", @"测试测试测试", @"菜单栏333"] seletedIcon:nil margin:kWidth(10) normalFontSize:kWidth(30) selectFontSize:kWidth(34)];
+    ZCCSegmentView *segmentView = [[ZCCSegmentView alloc] initWithSegmentsArray:@[@"菜单栏1", @"测试测试测试", @"菜单栏333"] seletedIcon:[UIImage imageNamed:@"icon_xh"] margin:kWidth(10) normalFontSize:kWidth(30) selectFontSize:kWidth(34)];
     CGSize segmentSize = [segmentView getSegmentViewSize];
     segmentView.frame = CGRectMake(20, 100, segmentSize.width, segmentSize.height);
     segmentView.sliderType = ZCCSegmentBottomSliderFixed; //固定宽
