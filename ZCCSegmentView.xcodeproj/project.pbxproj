@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CA8F073A71FDE3D953A966A /* libPods-ZCCSegmentView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DC35D6ED7711113910612 /* libPods-ZCCSegmentView.a */; };
+		51BF558A247664DB00EBBD9F /* ZCCSegmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BF557F247664DB00EBBD9F /* ZCCSegmentLabel.m */; };
+		51BF558B247664DB00EBBD9F /* ZCCSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BF5581247664DB00EBBD9F /* ZCCSegmentView.m */; };
+		51BF558C247664DB00EBBD9F /* UIView+ZCCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BF5584247664DB00EBBD9F /* UIView+ZCCExtension.m */; };
+		51BF558D247664DB00EBBD9F /* NSString+ZCCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BF5586247664DB00EBBD9F /* NSString+ZCCExtension.m */; };
 		51BFCCD72462F80300617DCF /* ZCCFixedSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BFCCD62462F80300617DCF /* ZCCFixedSegmentVC.m */; };
 		51BFCCDA2462F81900617DCF /* ZCCUnFixedSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BFCCD92462F81900617DCF /* ZCCUnFixedSegmentVC.m */; };
 		7C8FBDC02457C2F1004744CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDBF2457C2F1004744CD /* AppDelegate.m */; };
@@ -16,14 +19,20 @@
 		7C8FBDCB2457C2F5004744CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8FBDCA2457C2F5004744CD /* Assets.xcassets */; };
 		7C8FBDCE2457C2F5004744CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8FBDCC2457C2F5004744CD /* LaunchScreen.storyboard */; };
 		7C8FBDD12457C2F5004744CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDD02457C2F5004744CD /* main.m */; };
-		7C8FBDDC2457CBD8004744CD /* ZCCSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */; };
-		7C8FBDDD2457CBD8004744CD /* ZCCSegmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */; };
-		7C8FBDE6245803CD004744CD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDE5245803CD004744CD /* NSString+Extension.m */; };
-		7C8FBDE92458055E004744CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDE82458055E004744CD /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		51BFCCD4245F25A800617DCF /* ZCCSegmentDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentDefs.h; sourceTree = "<group>"; };
+		51BF557E247664DB00EBBD9F /* ZCCSegmentDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentDefs.h; sourceTree = "<group>"; };
+		51BF557F247664DB00EBBD9F /* ZCCSegmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCSegmentLabel.m; sourceTree = "<group>"; };
+		51BF5580247664DB00EBBD9F /* ZCCSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentView.h; sourceTree = "<group>"; };
+		51BF5581247664DB00EBBD9F /* ZCCSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCSegmentView.m; sourceTree = "<group>"; };
+		51BF5582247664DB00EBBD9F /* ZCCSegmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentLabel.h; sourceTree = "<group>"; };
+		51BF5584247664DB00EBBD9F /* UIView+ZCCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZCCExtension.m"; sourceTree = "<group>"; };
+		51BF5585247664DB00EBBD9F /* ZCCCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCCommonTool.h; sourceTree = "<group>"; };
+		51BF5586247664DB00EBBD9F /* NSString+ZCCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZCCExtension.m"; sourceTree = "<group>"; };
+		51BF5587247664DB00EBBD9F /* UIView+ZCCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZCCExtension.h"; sourceTree = "<group>"; };
+		51BF5588247664DB00EBBD9F /* ZCCTool.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCTool.pch; sourceTree = "<group>"; };
+		51BF5589247664DB00EBBD9F /* NSString+ZCCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZCCExtension.h"; sourceTree = "<group>"; };
 		51BFCCD52462F80300617DCF /* ZCCFixedSegmentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCFixedSegmentVC.h; sourceTree = "<group>"; };
 		51BFCCD62462F80300617DCF /* ZCCFixedSegmentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCFixedSegmentVC.m; sourceTree = "<group>"; };
 		51BFCCD82462F81900617DCF /* ZCCUnFixedSegmentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCUnFixedSegmentVC.h; sourceTree = "<group>"; };
@@ -38,19 +47,6 @@
 		7C8FBDCD2457C2F5004744CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8FBDCF2457C2F5004744CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8FBDD02457C2F5004744CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCSegmentView.m; sourceTree = "<group>"; };
-		7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCSegmentLabel.m; sourceTree = "<group>"; };
-		7C8FBDDA2457CBD7004744CD /* ZCCSegmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentLabel.h; sourceTree = "<group>"; };
-		7C8FBDDB2457CBD8004744CD /* ZCCSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCSegmentView.h; sourceTree = "<group>"; };
-		7C8FBDE22457D12E004744CD /* ZCCCommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCCommonTool.h; sourceTree = "<group>"; };
-		7C8FBDE32457D26B004744CD /* ZCCTool.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCTool.pch; sourceTree = "<group>"; };
-		7C8FBDE4245803CD004744CD /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		7C8FBDE5245803CD004744CD /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		7C8FBDE72458055E004744CD /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		7C8FBDE82458055E004744CD /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		B693E18609D69DD91EBA5762 /* Pods-ZCCSegmentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCCSegmentView.debug.xcconfig"; path = "Target Support Files/Pods-ZCCSegmentView/Pods-ZCCSegmentView.debug.xcconfig"; sourceTree = "<group>"; };
-		D60DC35D6ED7711113910612 /* libPods-ZCCSegmentView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCCSegmentView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5D32FBB8FE07D33322CF48 /* Pods-ZCCSegmentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCCSegmentView.release.xcconfig"; path = "Target Support Files/Pods-ZCCSegmentView/Pods-ZCCSegmentView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,21 +54,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA8F073A71FDE3D953A966A /* libPods-ZCCSegmentView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7616F8F6B823116528901105 /* Pods */ = {
+		51BF557D247664DB00EBBD9F /* SegmentView */ = {
 			isa = PBXGroup;
 			children = (
-				B693E18609D69DD91EBA5762 /* Pods-ZCCSegmentView.debug.xcconfig */,
-				FB5D32FBB8FE07D33322CF48 /* Pods-ZCCSegmentView.release.xcconfig */,
+				51BF5583247664DB00EBBD9F /* Tool */,
+				51BF557E247664DB00EBBD9F /* ZCCSegmentDefs.h */,
+				51BF557F247664DB00EBBD9F /* ZCCSegmentLabel.m */,
+				51BF5580247664DB00EBBD9F /* ZCCSegmentView.h */,
+				51BF5581247664DB00EBBD9F /* ZCCSegmentView.m */,
+				51BF5582247664DB00EBBD9F /* ZCCSegmentLabel.h */,
 			);
-			name = Pods;
-			path = Pods;
+			path = SegmentView;
+			sourceTree = "<group>";
+		};
+		51BF5583247664DB00EBBD9F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				51BF5584247664DB00EBBD9F /* UIView+ZCCExtension.m */,
+				51BF5585247664DB00EBBD9F /* ZCCCommonTool.h */,
+				51BF5586247664DB00EBBD9F /* NSString+ZCCExtension.m */,
+				51BF5587247664DB00EBBD9F /* UIView+ZCCExtension.h */,
+				51BF5588247664DB00EBBD9F /* ZCCTool.pch */,
+				51BF5589247664DB00EBBD9F /* NSString+ZCCExtension.h */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		7C8FBDB22457C2F1004744CD = {
@@ -80,8 +91,6 @@
 			children = (
 				7C8FBDBD2457C2F1004744CD /* ZCCSegmentView */,
 				7C8FBDBC2457C2F1004744CD /* Products */,
-				7616F8F6B823116528901105 /* Pods */,
-				AFE525AD6383634F580A7871 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +105,7 @@
 		7C8FBDBD2457C2F1004744CD /* ZCCSegmentView */ = {
 			isa = PBXGroup;
 			children = (
-				7C8FBDDE2457CE21004744CD /* Tool */,
-				7C8FBDD72457CBCD004744CD /* SegmentView */,
+				51BF557D247664DB00EBBD9F /* SegmentView */,
 				7C8FBDBE2457C2F1004744CD /* AppDelegate.h */,
 				7C8FBDBF2457C2F1004744CD /* AppDelegate.m */,
 				7C8FBDC42457C2F1004744CD /* ViewController.h */,
@@ -115,39 +123,6 @@
 			path = ZCCSegmentView;
 			sourceTree = "<group>";
 		};
-		7C8FBDD72457CBCD004744CD /* SegmentView */ = {
-			isa = PBXGroup;
-			children = (
-				51BFCCD4245F25A800617DCF /* ZCCSegmentDefs.h */,
-				7C8FBDDA2457CBD7004744CD /* ZCCSegmentLabel.h */,
-				7C8FBDD92457CBD7004744CD /* ZCCSegmentLabel.m */,
-				7C8FBDDB2457CBD8004744CD /* ZCCSegmentView.h */,
-				7C8FBDD82457CBD7004744CD /* ZCCSegmentView.m */,
-			);
-			path = SegmentView;
-			sourceTree = "<group>";
-		};
-		7C8FBDDE2457CE21004744CD /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				7C8FBDE22457D12E004744CD /* ZCCCommonTool.h */,
-				7C8FBDE32457D26B004744CD /* ZCCTool.pch */,
-				7C8FBDE4245803CD004744CD /* NSString+Extension.h */,
-				7C8FBDE5245803CD004744CD /* NSString+Extension.m */,
-				7C8FBDE72458055E004744CD /* UIView+Extension.h */,
-				7C8FBDE82458055E004744CD /* UIView+Extension.m */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		AFE525AD6383634F580A7871 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D60DC35D6ED7711113910612 /* libPods-ZCCSegmentView.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,7 +130,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C8FBDD42457C2F5004744CD /* Build configuration list for PBXNativeTarget "ZCCSegmentView" */;
 			buildPhases = (
-				5748B4A41EDBE766EFEAA25A /* [CP] Check Pods Manifest.lock */,
 				7C8FBDB72457C2F1004744CD /* Sources */,
 				7C8FBDB82457C2F1004744CD /* Frameworks */,
 				7C8FBDB92457C2F1004744CD /* Resources */,
@@ -214,45 +188,20 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5748B4A41EDBE766EFEAA25A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZCCSegmentView-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7C8FBDB72457C2F1004744CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C8FBDC62457C2F1004744CD /* ViewController.m in Sources */,
-				7C8FBDDD2457CBD8004744CD /* ZCCSegmentLabel.m in Sources */,
+				51BF558C247664DB00EBBD9F /* UIView+ZCCExtension.m in Sources */,
+				51BF558A247664DB00EBBD9F /* ZCCSegmentLabel.m in Sources */,
 				51BFCCDA2462F81900617DCF /* ZCCUnFixedSegmentVC.m in Sources */,
 				51BFCCD72462F80300617DCF /* ZCCFixedSegmentVC.m in Sources */,
 				7C8FBDC02457C2F1004744CD /* AppDelegate.m in Sources */,
 				7C8FBDD12457C2F5004744CD /* main.m in Sources */,
-				7C8FBDDC2457CBD8004744CD /* ZCCSegmentView.m in Sources */,
-				7C8FBDE92458055E004744CD /* UIView+Extension.m in Sources */,
-				7C8FBDE6245803CD004744CD /* NSString+Extension.m in Sources */,
+				51BF558D247664DB00EBBD9F /* NSString+ZCCExtension.m in Sources */,
+				51BF558B247664DB00EBBD9F /* ZCCSegmentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,11 +343,10 @@
 		};
 		7C8FBDD52457C2F5004744CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B693E18609D69DD91EBA5762 /* Pods-ZCCSegmentView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = ZCCSegmentView/Tool/ZCCTool.pch;
+				GCC_PREFIX_HEADER = ZCCSegmentView/SegmentView/Tool/ZCCTool.pch;
 				INFOPLIST_FILE = ZCCSegmentView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -413,11 +361,10 @@
 		};
 		7C8FBDD62457C2F5004744CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB5D32FBB8FE07D33322CF48 /* Pods-ZCCSegmentView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = ZCCSegmentView/Tool/ZCCTool.pch;
+				GCC_PREFIX_HEADER = ZCCSegmentView/SegmentView/Tool/ZCCTool.pch;
 				INFOPLIST_FILE = ZCCSegmentView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
